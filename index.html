@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>read</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand|Roboto|Roboto+Condensed|Roboto+Mono|Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="bar"></div>
+
+      <div class="read-container">
+        <div class="read-text" id="readText"></div>
+      </div>
+
+      <div class="bar"></div>
+    </div>
+    <div class="container input">
+      <div class="buttons">
+        <button id="startBtn" class="startBtn" onclick="start()">START</button>
+        <button onclick="stop()">stop</button>
+      </div>
+      <div class="sliderDiv">
+        <span>Words Per Minute: <span id="wpmVal"></span></span>
+        <input type="range" id="wpm" name="wpm" min="50" max="600" step="50" value="200" />
+      </div>
+      <textarea id="textInput"></textarea>
+    </div>
+  </body>
+</html>
