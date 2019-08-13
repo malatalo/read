@@ -10,23 +10,40 @@
   </head>
   <body>
     <div class="container">
-      <div class="bar"></div>
+      <div class="bar-container" onclick='addSubWPM("+")'>
+        <div class="barM"></div>
+        <div class="barP"></div>
+      </div>
 
       <div class="read-container">
         <div class="read-text" id="readText"></div>
       </div>
 
-      <div class="bar"></div>
+      <div class="bar-container" onclick='addSubWPM("-")'>
+        <div class="barM"></div>
+      </div>
     </div>
     <div class="container input">
       <div class="buttons">
         <button id="startBtn" class="startBtn" onclick="start()">START</button>
         <button onclick="stop()">stop</button>
       </div>
-      <div class="sliderDiv">
-        <span>Words Per Minute: <span id="wpmVal"></span></span>
-        <input type="range" id="wpm" name="wpm" min="50" max="600" step="50" value="200" />
+      <div class="wpm-font-container">
+        <select id="font-select">
+          <option value="TNR">Times New Roman</option>
+          <option value="OpenS">Open Sans</option>
+          <option value="Quicksand">Quicksand</option>
+          <option value="Roboto">Roboto</option>
+          <option value="RobotoC">Roboto Condensed</option>
+          <option value="RobotoM">Roboto Mono</option>
+          <option value="SourceS">Source Sans Pro</option>
+        </select>
+        <div class="sliderDiv">
+          <span>Words Per Minute: <span id="wpmVal"></span></span>
+          <input type="range" id="wpm" name="wpm" min="50" max="600" step="50" value="250" />
+        </div>
       </div>
+      Select a word to start reading from it.
       <textarea id="textInput"></textarea>
     </div>
   </body>

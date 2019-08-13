@@ -18,10 +18,33 @@ html {
   height: 100%;
 }
 
-.bar {
-  height: 10%;
+.bar-container {
+  height: 100px;
+  width: 100px;
+  position: relative;
+}
+
+.wpm-font-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.barP {
+  height: 100px;
   width: 5px;
   background: black;
+  margin: auto;
+}
+
+.barM {
+  height: 5px;
+  width: 100px;
+  background: black;
+  position: absolute;
+  top: 50%;
 }
 
 .read-container {
@@ -33,7 +56,7 @@ html {
 }
 
 .read-text {
-  font-size: 4em
+  font-size: 4em;
 }
 
 .input {
@@ -55,9 +78,14 @@ html {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  margin-right: 15px;
 }
 
-button{
+#font-select {
+  margin-left: 15px;
+}
+
+button {
   margin: 10px;
   padding: 5px;
 }
@@ -71,7 +99,6 @@ button{
   width: 700px;
   height: 700px;
 }
-
 
 /*
 font-family: 'Open Sans', sans-serif;
